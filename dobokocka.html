@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobókocka játék</title>
+    <link rel="stylesheet" href="dobokocka.css">
+    <script src="game.js"></script>
+
+</head>
+<body>
+    <h1 id="cim">Dobókocka játék</h1>
+    <h2 id="message"></h2>
+    <button onclick="newGame()">Mutasd a dobókockákat!</button>
+    <div id="playground"><img style="display: none; left: 344px; top: 559px;" src="img/1.png" id="1" onclick="newScore(this)"><img style="display: none; left: 261px; top: 532px;" src="img/2.png" id="2" onclick="newScore(this)"><img style="display: none; left: 56px; top: 442px;" src="img/3.png" id="3" onclick="newScore(this)"><img style="display: none; left: 350px; top: 196px;" src="img/4.png" id="4" onclick="newScore(this)"><img style="display: none; left: 162px; top: 243px;" src="img/5.png" id="5" onclick="newScore(this)"></div>
+    <label for="osszeg" name="osszeg" id="osszeg">Összeg:</label>
+    <input type="number" name="osszegbevitel" id="osszegbevitel">
+    <button onclick="szamolas()">Számol</button>
+    <div id="eredmeny">
+		<p id="szoveg"></p>
+	</div>
+    <!-- <button onclick="nextGame()">Új játék</button> -->
+</body>
+</html>
